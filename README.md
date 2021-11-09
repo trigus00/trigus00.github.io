@@ -1,27 +1,42 @@
-Here is a website that we have create displaying the nutritional facts of all type of food ! Hope y'all enjoy ! 
+# Project Title
 
-Website = >: https://trigus00.github.io/index.html
+Nutritional Facts 
 
+## Description
 
+The purpose of this project is to displat nutritional facts of your favorite food ! 
 
-Creating a website that displays the following requirements down below: 
+## Getting Started
 
--You must use only core HTML and  JavaScript (No frameworks like React, Vue, etc)
+### Dependencies
 
--It should be relatively responsive (doesn't have to be perfect but should react to different screen sizes)
+* HTML
+* Bootstrap
+* CSS 
+* API's 
+* Visual Studio 
+ 
 
--You CAN use Bootstrap if you'd like
+### Installing
 
--Research and use 3 CSS features you've never used before (this could be a psuedo-class, canvas, etc)
+* BootStrap: https://getbootstrap.com/docs/5.1/getting-started/download/
+* Any modifications needed to be made to files/folders
 
--This site must use JavaScript to create some sort of dynamic content (i.e., respond to a click event, take in and display information, have an event happen on       mouseover, etc)
+### Executing program
 
--This site may be educational, based on a product (real or fictional), informational, or interactive/game
+* How to run the program
+* Open up our webpage : https://trigus00.github.io/index.html 
+* Enter your favorite food or you food curiosity 
+* Displays Nutritional Facts of the item you search: Calories,Sodium,Total,Fat,Saturated,Fat,Cholesterol,Carbohydrates,Fiber,Sugar,Protein and Potassium
+```
+code blocks for commands
+```
 
--This site must be deployed on GitHub Pages, you will submit a link to your GitHub repo and your deployed GitHub pages site
+## Authors
 
--Your team will present this site to the class at the end of the day.  Presentations should be 5-10 minutes and include a demonstration, explanation of your -site/product and a technical deep dive of how you built your site/app.  All team members must participate in presentation
+Contributors names and contact info
 
--Most important requirements... Have Fun!  Do Research!  Learn Something New!
+Chase Faggard 
+Gustavo Mendoza 
 
 
