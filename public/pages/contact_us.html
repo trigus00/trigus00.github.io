@@ -6,84 +6,62 @@
     <meta name="description" content="Finds nutritional information on foods">
     <meta name="author" content="Chase Faggard, Gustavo Mendoza">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
     <title>Nutrtion Calculator</title>
-
     <!-- Bootstrap CSS-->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="public/css/main.css" rel="stylesheet">
+    <link href="/public/css/main.css" rel="stylesheet">
   </head>
-
   <body>
-
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/pages/how.html">How it works ? </a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/index.html"> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/public/pages/contact_us.html">Contact us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="public/pages/how.html">How it works ? </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="public/pages/contact_us.html">Contact us</a>
-          </li>
+         
         </ul>
       </div>
     </nav>
-
     <main role="main" class="main">
-
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron bg-primary">
-        <div class="container text-white">
-          <h1 class="display-3">Nutritional Calculator</h1>
-          <p>The best place to find nutritional facts of your favorite foods</p>
+      <div class="jumbotron bg-info text-white">
+        <div class="container">
+          <h1 class="display-3">Contact us </h1>
+        </div>
         </div>
       </div>
-
-      <div class="container"> <!-- Container -->
+      <div class="container">
+        <!-- Example row of columns -->
         <div class="row">
-            <h4>Enter the name of a food below to find nutritional information on it</h4>
+          <div class="col-md-8">
+            <img class="profile" src="https://media-exp1.licdn.com/dms/image/C4E03AQEkE1zwQ6fa7A/profile-displayphoto-shrink_200_200/0/1619026585070?e=1642032000&v=beta&t=YLOd0NjrnPIoiyLZqaN7PI1kktEsNdCgZf09jPUxCgk" alt= "Chase Faggard" width="200" height="300" alt="Avatar"> 
+            <img class="profile" src="https://media-exp1.licdn.com/dms/image/C4E03AQG3BoAZkbORIw/profile-displayphoto-shrink_800_800/0/1582588475687?e=1642032000&v=beta&t=ofBZ22-v_YlYtGfWn3nzsoCMAt0Fa-UpxCj2lFRaCLQ" alt= "Gus Mendoza" width="200" height="300" alt= "Avatar">
+            <p class="py-3 my-3"> You can contact us at 123 - 456 -7890 </p>
+          </div>
+          
+         
         </div>
-        <form onSubmit="getFoodSearch()" class="" id="form">
-            <div class="field">
-                <input class="button" type="submit" value="Search" name="submit" />
-                <input 
-                    id="value"
-                    type="text" 
-                    placeholder="Enter an ingredient..." 
-                    name="input" 
-                    autoComplete="off" 
-                    onChange=""
-                    value=""
-                    required 
-                /> 
-            </div>
-        </form>
         <hr>
-        <div id="card-data">
-        </div>
       </div> <!-- /container -->
-      <footer class="container">
-        <p>&copy; A Talent Path Company 2021</p>
-      </footer>
     </main>
-
+    <footer class="container">
+      <p>&copy; A Talent Path Company 2021</p>
+    </footer>
     <!-- ================================================== -->
-    <!-- Bootstrap JS -->
+    <!-- JS (At the end so it loads faster)-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="public/js/popper.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
-    <!--- Custom JS -->
-    <script src="public/js/onSubmit.js"></script>
-    <script src="public/js/api/foodSearch.js"></script>
   </body>
 </html>
