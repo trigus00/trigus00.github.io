@@ -7,58 +7,54 @@
   <meta name="description" content="Finds nutritional information on foods">
   <meta name="author" content="Chase Faggard, Gustavo Mendoza">
   <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-  <title>Nutrtion Calculator</title>
+  <title>Nutrition Calculator</title>
   <!-- Bootstrap CSS-->
   <link href="/public/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="/public/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+<body class="theme-floral">
+  <nav class="navbar navbar-expand-md navbar-light theme-bg">
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
       aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link theme-text" href="../../index.html"> HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/public/pages/how.html">How it works ? </a>
+          <a class="nav-link theme-text" href="">HOW IT WORKS? </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/public/pages/contact_us.html">Contact us</a>
+          <a class="nav-link theme-text" href="./contact_us.html">CONTACT US</a>
         </li>
-
       </ul>
     </div>
   </nav>
   <main role="main" class="main">
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron bg-success text-white">
-      <div class="container">
-        <h1 class="display-3">How it works ? </h1>
-      </div>
+    <div class="theme-bg theme-text p-5 text-center" id="home">
+      <h1 class="display-4 p-4"><strong>How it works?</strong></h1>
     </div>
-    </form>
-    </div>
-    </div>
-    <div class="container-fluid">
+    <div class="container how">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-sm-3 col-md-6">
+        <div class="col-lg-9 pt-5 auto">
           <section>
-            <h3>How it works</h3>
-            <p> How this works is you input the type of food vegetable and/or fruit</p>
-            <p> After the user has input there desire fruit or vegetable. 
-              The Nutritional Facts will be displayed in the
-              following respective catagory as shown below </p>
+            <h3>Instructions</h3>
+            <p> Input a food item into the api search engine. After submitting your search,
+              it sends out a POST api request to <a href="https://nutritionix.com"
+              target="_blank">Nutritionix Api</a> with your query and returns
+              the results.
+            </p>
+            <p>The information about the food includes:</p>
             <p>
-              <ul>
-              <li>calories</li>
+            <ul>
+              <li>Calories</li>
               <li>Sodium</li>
               <li>Total Fat</li>
               <li>Saturated Fat</li>
@@ -70,23 +66,23 @@
               <li>Potassium</li>
             </ul>
           </section>
-        
+
           <section>
             <p>
             <h3> Tools and Software used: </h3>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Nutrition API's</li>
-              <li>javascript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap v4.0</li>
+              <li>Nutritionix API</li>
+              <li>Javascript ES6</li>
               <li>Visual Studio</li>
             </ul>
             </p>
           </section>
         </div>
 
-        <div class="col-sm-9 col-md-6">
+        <div class="col-md-3 pt-5">
           <!--image slider start-->
           <div class="slider">
             <div class="slides">
@@ -133,13 +129,10 @@
         </div>
       </div>
     </div>
-
-    </div>
-    <hr>
-    </div> <!-- /container -->
   </main>
   <footer class="container">
-    <p>&copy; A Talent Path Company 2021</p>
+    <hr>
+    <p>Copyright &copy; 2021 Talent Path</p>
   </footer>
   <!-- ================================================== -->
   <!-- JS (At the end so it loads faster)-->
@@ -148,17 +141,6 @@
     crossorigin="anonymous"></script>
   <script src="public/js/popper.min.js"></script>
   <script src="public/js/bootstrap.min.js"></script>
-  <script src="public/js/random_picture.js"></script>
-  <script type="text/javascript">
-    var counter = 1;
-    setInterval(function () {
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if (counter > 4) {
-        counter = 1;
-      }
-    }, 5000);
-  </script>
 </body>
 
 </html>

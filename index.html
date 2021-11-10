@@ -1,90 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Finds nutritional information on foods">
     <meta name="author" content="Chase Faggard, Gustavo Mendoza">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>Nutrtion Calculator</title>
-
+    <title>Nutrition Calculator</title>
     <!-- Bootstrap CSS-->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="public/css/main.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body class="theme-floral">
+    <nav class="navbar navbar-expand-md navbar-light theme-bg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/index.html"> Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="public/pages/how.html">How it works ? </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="public/pages/contact_us.html">Contact us</a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link theme-text" href="/index.html"> HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link theme-text" href="public/pages/how.html">HOW IT WORKS? </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link theme-text" href="public/pages/contact_us.html">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-
     <main role="main" class="main">
+        <div class="theme-bg theme-text px-5 pb-5 text-center" id="home">
+            <img src="public/images/salad.png" alt="nutrition-calculator-image" class="mx-3 mb-3 px-5 pb-5 nutrition-icon"
+                roundedCircle />
+            <h1 class="display-4 pt-4"><strong>Nutrition Calculator</strong></h1>
+            <h4 class="px-2 py-4">Powered by <a class="theme-text1 underlined" href="https://nutritionix.com"
+                    target="_blank">Nutritionix Api</a></h4>
+        </div>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron bg-primary">
-        <div class="container text-white">
-          <h1 class="display-3">Nutritional Calculator</h1>
-          <p>The best place to find nutritional facts of your favorite foods</p>
+        <div class="theme-bg3 theme-text">
+            <div class="navSpace"></div>
+            <h4 class="px-2 pt-2 pb-5 text-center">Find nutritional info on ingredients and meals</h4>
+            <form onSubmit="getFoodSearch()" class="ac-cadet-blue" id="form">
+                <div class="field">
+                    <input class="button theme-button" type="submit" value="Search" name="submit" />
+                    <input id="value" type="text" placeholder="Enter an ingredient..." name="input" autoComplete="off"
+                        value="" required />
+                </div>
+            </form>
+            <div id="card-data"></div>
+            <div class="navSpace"></div>
         </div>
-      </div>
-
-      <div class="container"> <!-- Container -->
-        <div class="row">
-            <h4>Enter the name of a food below to find nutritional information on it</h4>
-        </div>
-        <form onSubmit="getFoodSearch()" class="" id="form">
-            <div class="field">
-                <input class="button" type="submit" value="Search" name="submit" />
-                <input 
-                    id="value"
-                    type="text" 
-                    placeholder="Enter an ingredient..." 
-                    name="input" 
-                    autoComplete="off" 
-                    onChange=""
-                    value=""
-                    required 
-                /> 
-            </div>
-        </form>
-        <hr>
-        <div id="card-data">
-        </div>
-      </div> <!-- /container -->
-      <footer class="container">
-        <p>&copy; A Talent Path Company 2021</p>
-      </footer>
     </main>
-
+    <footer class="container">
+        <hr>
+        <p>Copyright &copy; 2021 Talent Path</p>
+    </footer>
     <!-- ================================================== -->
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="public/js/popper.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <!--- Custom JS -->
     <script src="public/js/onSubmit.js"></script>
     <script src="public/js/api/foodSearch.js"></script>
-    <script src="public/js/random_picture.js"></script>
-  </body>
+</body>
+
 </html>

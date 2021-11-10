@@ -9,10 +9,10 @@ const getFoodSearch = async () => {
     let data = await foodSearch(result)
     let cardData = document.getElementById('card-data')
     cardData.innerHTML = `
-    <div class="card">
+    <div class="card theme-bg3">
     <div class="card-body">
-      <h4 class="card-title py-3 px-2 m-0 bg-white text-center"><img class="thumbnail py-2" src="${data.foods[0].photo.thumb}" alt="${data.foods[0].food_name}" /> ${data.foods[0].food_name} </h4>
-      <table class="table table-sm table-responsive-stack bg-white" id="foodTable">
+      <h4 class="card-title"><img class="thumbnail py-2" src="${data.foods[0].photo.thumb}" alt="${data.foods[0].food_name}" /> ${data.foods[0].food_name} </h4>
+      <table class="table table-sm table-responsive-stack" id="foodTable">
         <thead>
           <tr>
             <th scope="col">Calories</th>
