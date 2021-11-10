@@ -1,7 +1,9 @@
 /* Import dependency files */
 @import '_variables.css'; /* Contains variables for color presets */
 @import '_themes.css'; /* Contains theme classes using variables */
-
+/* Import dependency files */
+@import url('variables.css'); /* Contains variables for color presets */
+@import url('themes.css'); /* Contains theme classes using variables */
 :root { --navbar-size: 75px; } /* Navbar height */
 
 html {
