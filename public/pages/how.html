@@ -1,73 +1,164 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Finds nutritional information on foods">
-    <meta name="author" content="Chase Faggard, Gustavo Mendoza">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <title>Nutrtion Calculator</title>
-    <!-- Bootstrap CSS-->
-    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="/public/css/main.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/public/pages/how.html">How it works ? </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/public/pages/contact_us.html">Contact us</a>
-          </li>
-         
-        </ul>
-      </div>
-    </nav>
-    <main role="main" class="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron bg-success text-white">
-        <div class="container">
-          <h1 class="display-3">How it works ? </h1>
-        </div>
-      </div> 
-        </form>
-        </div>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Finds nutritional information on foods">
+  <meta name="author" content="Chase Faggard, Gustavo Mendoza">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+  <title>Nutrtion Calculator</title>
+  <!-- Bootstrap CSS-->
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/public/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/public/pages/how.html">How it works ? </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/public/pages/contact_us.html">Contact us</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <main role="main" class="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron bg-success text-white">
       <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-8">
-            <p>  This is where we are going to input information
+        <h1 class="display-3">How it works ? </h1>
+      </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    <div class="container-fluid">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-sm-3 col-md-6">
+          <section>
+            <h3>How it works</h3>
+            <p> How this works is you input the type of food vegetable and/or fruit</p>
+            <p> After the user has input there desire fruit or vegetable. 
+              The Nutritional Facts will be displayed in the
+              following respective catagory as shown below </p>
+            <p>
+              <ul>
+              <li>calories</li>
+              <li>Sodium</li>
+              <li>Total Fat</li>
+              <li>Saturated Fat</li>
+              <li>Cholesterol</li>
+              <li>Carbohydrate</li>
+              <li>Fiber</li>
+              <li>Sugar</li>
+              <li>Protien</li>
+              <li>Potassium</li>
+            </ul>
+          </section>
+        
+          <section>
+            <p>
+            <h3> Tools and Software used: </h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Nutrition API's</li>
+              <li>javascript</li>
+              <li>Visual Studio</li>
+            </ul>
             </p>
-              <p> How this works is you input the type of food vegetable and/or fruit</p>
-              <p> After the user has input there desire fruit or vegetable. The Nutritional Facts will be displayed in the following catagory  </p>
-              <p>
-                Calories,Sodium,Total,Fat,Saturated,Fat,Cholesterol,Carbohydrates,Fiber,Sugar,Protein	and Potassium</p>
-          
-          </div>
-          
-         <img src="https://images.indianexpress.com/2021/01/strawberry_1200_getty.jpg" alt="starwberry" width="1000" height="800">
+          </section>
         </div>
-        <hr>
-      </div> <!-- /container -->
-    </main>
-    <footer class="container">
-      <p>&copy; A Talent Path Company 2021</p>
-    </footer>
-    <!-- ================================================== -->
-    <!-- JS (At the end so it loads faster)-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="public/js/popper.min.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
-  </body>
+
+        <div class="col-sm-9 col-md-6">
+          <!--image slider start-->
+          <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="/public/images/1.jpeg" alt="">
+              </div>
+              <div class="slide">
+                <img src="/public/images/2.webp" alt="">
+              </div>
+              <div class="slide">
+                <img src="/public/images/3.jpeg" alt="">
+              </div>
+              <div class="slide">
+                <img src="/public/images/4.jpeg" alt="">
+              </div>
+              <!--slide images end-->
+
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <hr>
+    </div> <!-- /container -->
+  </main>
+  <footer class="container">
+    <p>&copy; A Talent Path Company 2021</p>
+  </footer>
+  <!-- ================================================== -->
+  <!-- JS (At the end so it loads faster)-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="public/js/popper.min.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  <script src="public/js/random_picture.js"></script>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
+</body>
+
 </html>
